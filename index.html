@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Tech It Easy Dashboard</title>
 </head>
 <body>
+<header>
+<img src="tech_it_easy.png">
+</header>
+<div class="container">
+<div class="tv-tobesold">
+    <h1>Te verkopen televisies</h1>
+    <h3 id="toBeSold"> 0</h3>
+</div>
+<div class="totalRevenue">
+    <h1>Totale omzet</h1>
+    <h3 id="actualRevenue"> 0</h3>
+</div>
+<div class="revenueGoal">
+    <h1>Doel omzet</h1>
+    <h3 id="optimalRevenue">0</h3>
+</div>
+<div class="showTVs">
+    <! -- Maak drie knoppen op de pagina: Sorteer op prijs, AmbiLight TV's en Uitverkochte exemplaren -->
+    <button id="sortByPrice"> Sorteer op prijs (laag naar hoog)</button>
+    <button id="sortByAmbilight"> Toon Ambilight TV's</button>
+    <button id="soldOut"> Uitverkochte TV's</button>
+    <p id="showTV"></p>
+</div>
+</div>
 
+<script src="main.js"></script>
 </body>
 </html>
