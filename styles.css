@@ -1,0 +1,58 @@
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "logo . ."
+                        "tobesold trevenue revenueg"
+                        "showtv showtv showtv";
+    grid-gap: 20px;
+}
+header {
+    grid-area: logo;
+}
+
+.showTVs {
+    grid-area: showtv;
+
+}
+.tv-tobesold, .totalRevenue, .revenueGoal {
+    background-color: darkblue;
+    color: lightgray;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.tv-tobesold h3 {
+    color: red;
+}
+.totalRevenue h3 {
+    color: lightblue;
+}
+.revenueGoal h3 {
+    color: lightgreen;
+}
+h3 {
+    font-size: 50px;
+}
+.tv-tobesold {
+    grid-area: tobesold;
+}
+.totalRevenue {
+    grid-area: trevenue;
+}
+.revenueGoal {
+    grid-area: revenueg;
+}
+
+
+
+
+
